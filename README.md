@@ -10,3 +10,4 @@ Contenido:
 4. [Funciones Callback](notes/004.md).
 5. [Ejemplos de métodos que utilizan funciones callback](notes/005.md).
 6. [Timers](notes/006.md).
+7. [Tipos de eventos y manejadores.](notes/007.md).
