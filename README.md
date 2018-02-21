@@ -8,3 +8,4 @@ Contenido:
 2. [El loop de eventos](notes/002.md).
 3. [Programación asíncrona](notes/003.md).
 4. [Funciones Callback](notes/004.md).
+5. [Ejemplos de métodos que utilizan funciones callback](notes/005.md).
