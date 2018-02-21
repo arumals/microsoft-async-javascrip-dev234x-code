@@ -4,5 +4,6 @@ La programación asíncrona mantiene las aplciaciones web responsivas, al permit
 
 Contenido:
 
-1. [Introducción](notes/001.md)
-2. [El loop de eventos](notes/002.md)
+1. [Introducción](notes/001.md).
+2. [El loop de eventos](notes/002.md).
+3. [Programación asíncrona](notes/003.md).
