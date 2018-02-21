@@ -1,2 +1,8 @@
-# microsoft-async-javascrip-dev234x-code
-Notes and code for the Microsoft JavaScript Async DEV234x course.
+# Programación Asíncrona en JavaScript.
+
+La programación asíncrona mantiene las aplciaciones web responsivas, al permitir que multiples tareas sean procesadas al mismo tiempo.
+
+Contenido:
+
+[1. Introducción](notes/001.md)
+[2. El loop de eventos](notes/002.md)
