@@ -44,6 +44,19 @@
                 record.push(currentTime);
                 updateRecordList();
             }
+            document.addEventListener('keypress', function(e){
+                switch(e.key){
+                    case "s":
+                        startTimer();
+                    break;
+                    case "t":
+                        recordTime();
+                    break;
+                    case "r":
+                        clearTimer();
+                    break;
+                }
+            })
             document.querySelector('#start').addEventListener('click',startTimer);
             document.querySelector('#reset').addEventListener('click',clearTimer);
             document.querySelector('#record-time').addEventListener('click', recordTime);
