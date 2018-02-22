@@ -9,16 +9,44 @@
         <button type="button" id="start">Start</button>
         <button type="button" id="reset">Reset</button>
         <button type="button" id="record-time">Record Time</button>
+        <div id="record-list"></div>
         <script>
-            document.querySelector('#start').addEventListener('click',function(){
-               console.log('start button');
-            });
-            document.querySelector('#reset').addEventListener('click',function(){
-                console.log('reset button');
-            });
-            document.querySelector('#record-time').addEventListener('click', function(){
-                console.log('record time');
-            });
+            var idInterval, isRunning = false, currentTime = 0, record = [];
+            function updateTimer(){
+                document.querySelector('#timer').innerHTML = (currentTime/100).toFixed(2);
+            }
+            function startTimer(){
+                if(!isRunning){
+                    idInterval = setInterval(function(){
+                        currentTime++; // increase 10 of 1000
+                        updateTimer();
+                    }, 10)
+                }else{
+                    clearInterval(idInterval);
+                }
+                isRunning = !isRunning;
+            }
+            function clearTimer(){
+                clearInterval(idInterval);
+                currentTime = 0;
+                isRunning = false;
+                record = [];
+                updateTimer();
+                updateRecordList();
+            }
+            function updateRecordList(){
+                var htmlList = record.map(function(t){
+                    return "<div>" + (t/100).toFixed(2) + "<\/div>";
+                });
+                document.querySelector('#record-list').innerHTML = htmlList.join("\n");
+            }
+            function recordTime(){
+                record.push(currentTime);
+                updateRecordList();
+            }
+            document.querySelector('#start').addEventListener('click',startTimer);
+            document.querySelector('#reset').addEventListener('click',clearTimer);
+            document.querySelector('#record-time').addEventListener('click', recordTime);
         </script>
     </body>
 </html>
