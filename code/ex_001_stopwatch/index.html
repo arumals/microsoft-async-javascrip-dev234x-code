@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Stopwatch Demo</title>
+    </head>
+    <body>
+        <h1>Stopwatch Demo</h1>
+        <div id="timer">0</div>
+        <button type="button" id="start">Start</button>
+        <button type="button" id="reset">Reset</button>
+        <button type="button" id="record-time">Record Time</button>
+        <script>
+            document.querySelector('#start').addEventListener('click',function(){
+               console.log('start button');
+            });
+            document.querySelector('#reset').addEventListener('click',function(){
+                console.log('reset button');
+            });
+            document.querySelector('#record-time').addEventListener('click', function(){
+                console.log('record time');
+            });
+        </script>
+    </body>
+</html>
