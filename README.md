@@ -13,3 +13,4 @@ Contenido:
 7. [Tipos de eventos y manejadores](notes/007.md).
 8. [Manejando el evento click](notes/008.md).
 9. [Manejando los eventos del teclado](notes/009.md).
+10. [Introducción a las promises (promesas)](notes/010.md).
