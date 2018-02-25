@@ -16,3 +16,4 @@ Contenido:
 10. [Introducción a las promises (promesas)](notes/010.md).
 11. [Utilizando promises](notes/011.md).
 12. [Transformando valores](notes/012.md).
+13. [Operaciones asíncronas secuenciales](notes/013.md).
