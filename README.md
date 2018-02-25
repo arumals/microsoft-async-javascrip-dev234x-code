@@ -17,4 +17,6 @@ Contenido:
 11. [Utilizando promises](notes/011.md).
 12. [Transformando valores](notes/012.md).
 13. [Operaciones asíncronas secuenciales](notes/013.md).
-12. [Manejar multiples promises a la vez](notes/014.md).
+14. [Manejar multiples promises a la vez](notes/014.md).
+15. [Carrera de promises](notes/015.md).
+
