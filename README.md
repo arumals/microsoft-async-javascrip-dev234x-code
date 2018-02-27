@@ -20,3 +20,4 @@ Contenido:
 14. [Manejar multiples promises a la vez](notes/014.md).
 15. [Carrera de promises](notes/015.md).
 16. [Introducción al Fetch API](notes/016.md).
+17. [Uso básico del fetch](notes/017.md).
