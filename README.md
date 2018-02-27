@@ -22,3 +22,4 @@ Contenido:
 16. [Introducción al Fetch API](notes/016.md).
 17. [Uso básico del fetch](notes/017.md).
 18. [El objeto Init](notes/018.md).
+19. [Atributos Method y Body](notes/019.md).
