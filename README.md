@@ -23,3 +23,4 @@ Contenido:
 17. [Uso básico del fetch](notes/017.md).
 18. [El objeto Init](notes/018.md).
 19. [Atributos Method y Body](notes/019.md).
+20. [Headers y Mode](notes/020.md).
