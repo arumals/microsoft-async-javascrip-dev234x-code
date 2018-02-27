@@ -19,4 +19,4 @@ Contenido:
 13. [Operaciones asíncronas secuenciales](notes/013.md).
 14. [Manejar multiples promises a la vez](notes/014.md).
 15. [Carrera de promises](notes/015.md).
-
+16. [Introducción al Fetch API](notes/016.md).
