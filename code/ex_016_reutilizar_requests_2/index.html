@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+<head>
+    <title>Reutilizando requests 2</title>
+    <script type="text/javascript">
+        var request = new Request("https://jsonplaceholder.typicode.com/users");
+        fetch(request).then(function(result){
+            console.log(result.status);
+        });
+        fetch(request).then(function(result){
+            console.log(result.status);
+        });
+    </script>
+</head>
+<body>
+    <h1>Reutilizando requests 2</h1>
+</body>
+</html>
