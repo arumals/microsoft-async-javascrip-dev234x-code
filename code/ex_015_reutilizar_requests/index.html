@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+    <title>Reutilizando objetos request</title>
+    <script type="text/javascript">
+        var initObject = {
+            method: 'POST',
+            headers: new Headers(),
+            mode: 'cors',
+            body: "{}"
+        }
+        var request = new Request('https://jsonplaceholder.typicode.com/users', initObject);
+        fetch(request)
+            .then(function(result){
+                if(!result.ok) return Promise.reject(result.status);
+                return result.json();
+            })
+            .then(function(result){
+                console.log('JSON:', result);
+            })
+            .catch(function(err){
+                console.log('Error:', err);
+            })
+        fetch(request)
+            .then(function(result){
+                if(!result.ok) return Promise.reject(result.status);
+                return result.json();
+            })
+            .then(function(result){
+                console.log('JSON:', result);
+            })
+            .catch(function(err){
+                console.log('Error:', err);
+            })
+    </script>
+</head>
+<body>
+    <h1>Reutilizando objetos request</h1>
+</body>
+</html>

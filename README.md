@@ -25,3 +25,4 @@ Contenido:
 19. [Atributos Method y Body](notes/019.md).
 20. [Headers y Mode](notes/020.md).
 21. [Utilizando fetch con requests](notes/021.md).
+22. [Reutilizando Requests](notes/022.md).
