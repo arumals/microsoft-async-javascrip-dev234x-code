@@ -27,4 +27,4 @@ Contenido:
 21. [Utilizando fetch con requests](notes/021.md).
 22. [Reutilizando Requests](notes/022.md).
 23. [Generators](notes/023.md).
-
+24. [Creando e iterando sobre un Objeto Generator](notes/024.md).
