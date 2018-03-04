@@ -30,3 +30,4 @@ Contenido:
 24. [Creando e iterando sobre un Objeto Generator](notes/024.md).
 25. [Disparando errores dentro de una Función Generator](notes/025.md).
 26. [Generadores anidados](notes/026.md).
+27. [Enviando valores a los Generators](notes/027.md).
