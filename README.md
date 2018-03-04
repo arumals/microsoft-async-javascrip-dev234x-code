@@ -28,3 +28,4 @@ Contenido:
 22. [Reutilizando Requests](notes/022.md).
 23. [Generators](notes/023.md).
 24. [Creando e iterando sobre un Objeto Generator](notes/024.md).
+25. [Disparando errores dentro de una Función Generator](notes/025.md).
