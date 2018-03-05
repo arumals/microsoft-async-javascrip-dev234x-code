@@ -33,3 +33,4 @@ Contenido:
 27. [Enviando valores a los Generators](notes/027.md).
 28. [Otros métodos para iterar](notes/028.md).
 29. [Return en Generators](notes/029.md).
+30. [Throw en Generators](notes/030.md).
