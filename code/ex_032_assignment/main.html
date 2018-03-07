@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+    <title>Assignment 4 Introduction</title>
+    <style>
+        .data {
+            border-collapse: collapse;
+            margin-top: 50px;
+        }
+        .data th, .data td {
+            border: 1px solid gray;
+            padding: 5px 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Select two Starships from the dropdown lists to compare</h1>
+    <table>
+        <tr>
+            <td><select id="ship-1"></select></td>
+            <td><select id="ship-2"></select></td>
+            <td><button type="button" id="compare">Compare</button></td>
+        </tr>
+    </table>
+    <table class="data">
+        <thead>
+            <tr>
+                <th>&nbsp;</th><th>Starship 1</th>
+                <th>Starship 2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>Name</td><td id="s1-name"></td><td id="s2-name"></td></tr>
+            <tr><td>Cost</td><td id="s1-cost"></td><td id="s2-cost"></td></tr>
+            <tr><td>Speed</td><td id="s1-speed"></td><td id="s2-speed"></td></tr>
+            <tr><td>Cargo Size</td><td id="s1-size"></td><td id="s2-size"></td></tr>
+            <tr><td>Passengers</td><td id="s1-passengers"></td><td id="s2-passengers"></td></tr>
+        </tbody>
+    </table>
+    <script src="main.js"></script>
+</body>
+</html>
