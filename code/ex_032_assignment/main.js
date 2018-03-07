@@ -1,8 +1,8 @@
 // recursive function
-function run(genFuni, i) {
+function run(genFun, ...ids) {
 
     // generator object
-    const genObj = genFun(i);
+    const genObj = genFun(...ids);
 
     // iterative function
     function iterate(iteration) {
@@ -20,10 +20,20 @@ function run(genFuni, i) {
             .catch(x => iterate(genObj.throw(x)));
     }
 
+    try {
+        return iterate(genObj.next());
+    } catch(e) {
+        return Promise.reject(e);
+    }
+
 }
 
-function* gen(id) {
-    yield fetch(`http://swapi.co/api/starships/${id}`);
+function* gen(...ids) {
+    // convert ids into fetch array promises
+    const requests = yield Promise.all(ids.map(id => fetch(`http://swapi.co/api/starships/${id}`)));
+    // convert requests into array results
+    const results = yield Promise.all(requests.map(req => !req.ok ? Promise.reject(req.status) : Promise.resolve(req.json()) ));
+    return results;
 }
 
 // options data
@@ -68,15 +78,7 @@ comp.addEventListener('click', e => {
     const s1Id = s1.options[s1.selectedIndex].value;
     const s2Id = s2.options[s2.selectedIndex].value;
 
-    Promise.all([                   // process results async
-        gen(s1Id).next().value,
-        gen(s2Id).next().value,
-    ]).then(x => {                  // extract jsons
-        return Promise.all([
-            x[0].json(),
-            x[1].json(),
-        ]);
-    }).then(x => {                  // process results
+    run(gen, s1Id, s2Id).then(x => {
 
         const s1Name = document.querySelector('#s1-name');
         const s2Name = document.querySelector('#s2-name');
@@ -136,8 +138,11 @@ comp.addEventListener('click', e => {
         }
 
 
-    }).catch(e => {
-        console.log(e);
+    }).catch(err => {
+
+        // in case of error
+        console.error('Error found:', err);
+
     });
 });
 
