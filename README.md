@@ -35,3 +35,4 @@ Contenido:
 29. [Return en Generators](notes/029.md).
 30. [Throw en Generators](notes/030.md).
 31. [Utilizando Generadores con funciones Asíncronas](notes/031.md).
+32. [Método recursivo para iterar Promises](notes/032.md).
